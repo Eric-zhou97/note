@@ -92,5 +92,15 @@ subscription可以调用add/remove方法，管理子subscription，并最终一�
 
 subject相当于维护多个监听器的注册表，这与observable不同，之前发送的值不会重复发送。这意味着搭配errorHandler处理的时候，subscribe的位置需要考虑。但是，可以结合observable.subscribe(subject)实现对observable的多播。
 
+BehaviorSubject保存了最新值，会将该值发给用户。
+
+ReplaySubject(n)可以缓存n个值
+
+Subject.prototype.asObservable()防止泄露subject，在实例中使用的时候，每次都是新的subject调用asObservable，这意味着subject之前的数据并不会在新的observable返回值中出现。但将subject作为参数调用asObservable的效果依然存疑，待定。
+
+ReplaySubject和Subject要考虑组件的生命周期与service生命周期的区别
+
+
+
 
 
