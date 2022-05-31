@@ -1,0 +1,10 @@
+//只有要与不要两种情况，考虑用bit来做
+//滑动窗口的话，注意数组中有负数的话，可能用不了
+//sort的排序结果是对的，但过程并不是单纯的交换，不能以return 1 为实际依据
+//可以用栈来存下标
+
+
+两道未解决的题目
+https://leetcode-cn.com/problems/fsa7oZ/
+https://leetcode-cn.com/problems/maximum-xor-with-an-element-from-array/
+https://leetcode-cn.com/problems/maximum-xor-of-two-numbers-in-an-array/
