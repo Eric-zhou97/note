@@ -20,8 +20,23 @@
 
    []传入数据，()传出数据，[()]双向
    
+3. 国际化
+
+   1. 内容复用
+   
+      "enterEventType": "Enter one ${0}",
+   
+      "userAccountName": "User name"
+   
+   2. 使用"{{'app.enterEventType' | i18n: ('app.userAccountName' | i18n)}}"
+   
+   3. 格式调整：使用innerHTML
+   
 3. 
 
-   <div class="hljs-button signin" data-title="登录后复制" data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.4334&quot;}"></div></code>
    
-   <div class="hljs-button signin" data-title="登录后复制" data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.4334&quot;}"></div></code>
+
+
+
+
+
