@@ -158,6 +158,54 @@
    
       将对象作为内联块级弹性伸缩盒显示
    
+5. flex布局
+
+   conten适用于多行，想要适用于单行需要flex-wrap:wrap;适用于多行时，`align-content:center将子项作为一个整体在交叉轴上对齐，单个子项并未在各自行居中对齐。
+   
+   flex-wrap:wrap;可以使align-content呈现单行对齐(本质上还是多行，第二行高度为0)。
+   
+   align-items:center使子项在自己所在行的交叉轴上居中对齐，单行多行皆可，单个子项也对齐。
+   
+   align-self使作用在单个子项上，可以覆盖住align-items的值。在align-content作用的父项中，align-self使子项以其整体的交叉轴对齐，即align-content依然会对子项有影响。
+   
+   
+   
+   和 x 和 y 轴不同的是，主轴(main axis)和交叉轴(cross axis)两条轴线可以变换位置。
+   
+   justify影响的是主轴，align影响的是交叉轴
+   
+   
+   
+   「flex line」依据 flex-direction 值的变化，有时候是 row，而有时候是 column
+   
+   flex-wrap: nowrap 建立的就是 single-line flex 容器，其中所有的子级 flex item 的位置都被强制安排在一条线上
+   
+   flex-wrap: wrap 或者 wrap-reverse 会产生一个 multi-line 的容器，在其中，flex 容器可以产生很多线（line）。
+   
+   
+   
+   flex:1 是什么
+   
+5. 3D
+
+   在网页里，无论你搭建了怎样的三维场景，只要你希望它显示出来，就应该像这样把构成场景的三维物体都放在一个容器元素里，然后为容器元素添加摄像机属性（`perspective`和`perspective-origin`）。
+   
+   内容过多，需要单独研究。
+   
+5. overflow
+
+   overflow:hidden;清除浮动
+   
+   1. 当父元素没设置高度的时候，子元素float的时候，父元素高度会塌陷，子元素溢出。当你在父元素parent加上，overflow: hidden;就会出现下面的效果。 父元素高度正常。
+   2. overflow:hidden;会自动产生一个BFC，
+   3. 浏览器在计算BFC的高度时：BFC浮动元素的高度也要参与计算，即父元素不会忽略自己里面的浮动元素的高度，如果你的父元素的高度设置的auto的话，那么它的高度就会等于浮动元素的高度。
+   
+   overflow:hidden;解决外边距折叠问题，原理同上。
+   
+5. BFC
+
+   
+   
 5. 
 
    
