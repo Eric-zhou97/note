@@ -184,7 +184,7 @@
    
    
    
-   flex:1 是什么
+   flex:1 (flex-grow:1;flex-shrink:1;flex-basis:0%;)表示的含义是等分剩余空间
    
 5. 3D
 
@@ -205,6 +205,32 @@
 5. BFC
 
    
+   
+13. 浏览器的回流与重绘 (Reflow & Repaint)
+
+    牵涉到性能问题，考虑开单章
+
+    [浏览器的回流与重绘 (Reflow & Repaint) - 掘金 (juejin.cn)](https://juejin.cn/post/6844903569087266823)
+
+    
+
+5. margin
+
+   margin加百分比的话是相对于父元素的content，因此margin：-100%是移到父元素content的最左侧，内容重叠。
+   
+   margin在没有padding没有border的情况下会存在margin覆盖/坍塌的情况
+   
+   圣杯布局(https://github.com/xluos/demo/blob/gh-pages/圣杯和双飞翼布局/圣杯.html)
+   
+   双飞翼布局(https://github.com/xluos/demo/blob/gh-pages/圣杯和双飞翼布局/双飞翼.html)
+   
+5. 渲染树(Render Tree)
+
+   解析HTML构建DOM Tree
+   
+   解析CSS构建CSSOM Tree
+   
+   构建渲染树（Render Tree）
    
 5. 
 
