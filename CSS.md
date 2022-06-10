@@ -202,10 +202,25 @@
    
    overflow:hidden;解决外边距折叠问题，原理同上。
    
-5. BFC
+12. BFC(块级格式化上下文)
 
-   
-   
+    BFC它决定了元素如何对其内容进行定位，以及与其它元素的关系和相互作用，当涉及到可视化布局时，Block Formatting Context提供了一个环境，HTML在这个环境中按照一定的规则进行布局。
+
+    - overflow: hidden
+    - display: inline-block
+    - position: absolute
+    - position: fixed
+    - display: table-cell
+    - display: flex
+
+    BFC就是一个块级元素，块级元素会在垂直方向一个接一个的排列
+
+    BFC就是页面中的一个隔离的独立容器，容器里的标签不会影响到外部标签
+
+    垂直方向的距离由margin决定， 属于同一个BFC的两个相邻的标签外边距会发生重叠
+
+    计算BFC的高度时，浮动元素也参与计算
+
 13. 浏览器的回流与重绘 (Reflow & Repaint)
 
     牵涉到性能问题，考虑开单章
