@@ -304,6 +304,7 @@
 //数组转字符串，join，toString（该方法会产生逗号）
 //json转换
 // 转为字符串，var str=JSON.stringify(obj);
+  // 注意事项，JSON.stringify会将value为undefined的数据省略
 // 转为对象， var obj=JSON.parse(str);
 
 
