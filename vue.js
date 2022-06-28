@@ -38,6 +38,8 @@
 
 // Diff将新老VNode节点进行比对，然后将根据两者的比较结果进行最小单位地修改视图(patch)，而不是将整个视图根据新的VNode重绘，进而达到提升性能的目的。
 
+// <template>标签本质上没有什么意义。
+// template的作用是模板占位符，可帮助我们包裹元素，但在循环过程当中，template并不会被渲染到页面上.
 
 // vue-router有两种模式
 // hash模式背后的原理是onhashchange事件,可以在window对象上监听这个事件:
@@ -300,3 +302,4 @@
 // $nextTick用法：将回调延迟到下次 DOM 更新循环之后执行。在修改数据之后立即使用它，然后等待 DOM 更新。
 // updated用法：由于数据更改导致的虚拟 DOM 重新渲染和打补丁，在这之后会调用该钩子。当这个钩子被调用时，组件 DOM 已经更新，所以你现在可以执行依赖于 DOM 的操作。
 // 父的beforeUpdate->子的beforeUpdate->子的updated->父updated->nextTick回调
+
