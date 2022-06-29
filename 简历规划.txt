@@ -1,0 +1,13 @@
+把简历放在里面，直接做
+改蓝色
+document.designMode='on'
+
+适配不同宽度的效果，不确定
+@media screen and (max-width:1024px) {}
+@media screen and (max-width: 720px) {}
+
+https://zhuanlan.zhihu.com/p/360751157
+https://fangyinghang.com/cv-2020/dist/index.html?v=1
+https://wu-sili.gitee.io/resume/
+https://gitee.com/wu-sili/resume/tree/master
+https://xiedaimala.com/
