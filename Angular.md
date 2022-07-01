@@ -72,6 +72,18 @@
    
    ngOnInit是一个生命周期钩子(需导入OnInit)，Angular调用ngOnInit时，向应用程序传递这样一个信息：Angular已经完成了Component的创建工作。
    
+3. NzConfig
+
+   [Global Configuration | NG-ZORRO (ant.design)](https://ng.ant.design/docs/global-config/en)
+   
+   NzConfigService放在app.component.ts中可以给接口配置template值，详细接口文档见源码[UNPKG - ng-zorro-antd](https://unpkg.com/browse/ng-zorro-antd@9.3.0/core/config/config.d.ts)
+   
+   ngZorroConfig放在app.modules中，但无法使用template
+   
+3. inject和usefactory
+
+   **尚未学习**
+   
 3. 
 
    
