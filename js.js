@@ -1223,6 +1223,9 @@
 // 1&&2 //1
 
 
+// 判断字符是否为数字
+// parseFloat('>').toString()==='NaN'
+
 
 //字节面试题，已解决
 // const request1 = () =>

@@ -16,6 +16,8 @@
 
    FormControl是为单个表单控件提供支持的类，它是Angular表单中的最基本的构造块，它装了这些字段的值(value)和状态(status)，比如是否有效、是否脏（被修改过）或是否有错误等，并提供了一系列公共API。
    
+   patchValue(value,{emitEvent:false})防止触发valueChanges
+   
 3. 细节
 
    []传入数据，()传出数据包括outer的函数，[()]双向

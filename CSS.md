@@ -160,7 +160,7 @@
    
       将对象作为内联块级弹性伸缩盒显示
    
-5. flex布局
+5. ## flex布局
 
    conten适用于多行，想要适用于单行需要flex-wrap:wrap;适用于多行时，`align-content:center将子项作为一个整体在交叉轴上对齐，单个子项并未在各自行居中对齐。
    
@@ -188,13 +188,13 @@
    
    flex:1 (flex-grow:1;flex-shrink:1;flex-basis:0%;)表示的含义是等分剩余空间
    
-5. 3D
+5. ## 3D
 
    在网页里，无论你搭建了怎样的三维场景，只要你希望它显示出来，就应该像这样把构成场景的三维物体都放在一个容器元素里，然后为容器元素添加摄像机属性（`perspective`和`perspective-origin`）。
    
    内容过多，需要单独研究。
    
-5. overflow
+5. ## overflow
 
    overflow:hidden;清除浮动
    
@@ -204,7 +204,7 @@
    
    overflow:hidden;解决外边距折叠问题，原理同上。
    
-12. BFC(块级格式化上下文)
+12. ## BFC(块级格式化上下文)
 
     BFC它决定了元素如何对其内容进行定位，以及与其它元素的关系和相互作用，当涉及到可视化布局时，Block Formatting Context提供了一个环境，HTML在这个环境中按照一定的规则进行布局。
 
@@ -223,7 +223,7 @@
 
     计算BFC的高度时，浮动元素也参与计算
 
-13. 浏览器的回流与重绘 (Reflow & Repaint)
+13. ## 浏览器的回流与重绘 (Reflow & Repaint)
 
     牵涉到性能问题，考虑开单章
 
@@ -231,7 +231,7 @@
 
     
 
-5. margin
+5. ## margin
 
    margin加百分比的话是相对于父元素的content，因此margin：-100%是移到父元素content的最左侧，内容重叠。
    
@@ -241,7 +241,7 @@
    
    双飞翼布局(https://github.com/xluos/demo/blob/gh-pages/圣杯和双飞翼布局/双飞翼.html)
    
-5. 渲染树(Render Tree)
+5. ## 渲染树(Render Tree)
 
    解析HTML构建DOM Tree
    
@@ -249,7 +249,13 @@
    
    构建渲染树（Render Tree）
    
-5. 
+5. -webkit
 
+   首先是 -webkit- ，这是一个前缀，浏览器厂商会在属性前加一个私有的前缀来支持新属性。这个前缀指能够在以webkit为内核的浏览器中正常使用。
    
+   -webkit-fill-available  (撑满可用空间。)
+   
+17. 
+
+    
 
